@@ -145,7 +145,7 @@ body
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    background: var(--color-dark-blue);
+    background: var(--bs-primary);
     padding: .5rem .8rem;
     border-radius: 30px;
     font-weight: bold;
