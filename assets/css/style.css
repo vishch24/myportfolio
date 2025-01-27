@@ -159,7 +159,7 @@ body
 }
 
 .project-container .hover-link:hover {
-    background: var(--color-medium-blue);
+    background: var(--bs-info);
 }
 
 .owl-carousel .owl-nav button.owl-next,
