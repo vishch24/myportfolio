@@ -1,0 +1,179 @@
+body
+{
+    scroll-behavior: smooth;
+}
+
+/* Preloader Styles */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--bs-body-bg);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Loader Animation */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--color-medium-blue);
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Loader Animation Keyframes */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.social-media-icons .sm-icon
+{    
+    width: 50px;
+    height: 50px;
+}
+
+.social-media-icons .sm-icon:nth-child(1)
+{
+    background-color: var(--bs-dark);
+}
+.social-media-icons .sm-icon:nth-child(2)
+{
+    background-color: #0077b5;
+}
+.social-media-icons .sm-icon:nth-child(3)
+{
+    background-color: #38bc54;
+}
+/* .social-media-icons .sm-icon:nth-child(4)
+{
+    background-color: #738adb;
+} */
+.social-media-icons .sm-icon:nth-child(4)
+{
+    background-color: #ff4500;
+}
+.social-media-icons .sm-icon:nth-child(5)
+{
+    background-color: #0866ff;
+}
+.social-media-icons .sm-icon:nth-child(6)
+{
+    /* background-color: var(--bs-dark); */
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover
+{ 
+    --bs-nav-link-font-weight: 500;
+}
+
+.offcanvas
+{
+    background-color: var(--bg-offcanvas);
+}
+
+.section-title h1 { font-size: 3rem; }
+
+.project-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.project-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-container:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+/* Overlay Animation */
+.project-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(var(--bs-dark-rgb), 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.4s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.project-container:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Title Animation */
+.project-container .title {
+    color: var(--bs-light);
+    letter-spacing: 1px;
+    font-weight: bold;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.project-container:hover .title {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Link Animation */
+.project-container .hover-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: var(--color-dark-blue);
+    padding: .5rem .8rem;
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.project-container:hover .hover-link {
+    opacity: 1;
+}
+
+.project-container .hover-link:hover {
+    background: var(--color-medium-blue);
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev
+{
+    background: var(--bs-primary);
+    color: var(--bs-light);
+    padding: .5rem 1rem !important;
+}
+
+
+/* SCROLL TOP
+------------------------- */
+
+#scroll-top {
+    display: none;
+}

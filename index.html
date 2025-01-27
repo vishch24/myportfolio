@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body zclass="bg-body">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+
+        <div class="social-media-icons d-flex flex-column position-fixed end-0" style="top: 25%; z-index: 2;">
+            <div class="sm-icon position-relative">
+                <a href="https://github.com/vishch24" class="d-flex align-items-center justify-content-center text-light position-absolute top-0 start-0 end-0 bottom-0" target="_blank"><i class="bi bi-github fs-3"></i></a>
+            </div>
+            <div class="sm-icon position-relative">
+                <a href="https://www.linkedin.com/in/vishakha-chavan-25b275170/" class="d-flex align-items-center justify-content-center text-light position-absolute top-0 start-0 end-0 bottom-0" target="_blank"><i class="bi bi-linkedin fs-3"></i></a>
+            </div>
+            <div class="sm-icon position-relative">
+                <a href="https://wa.me/919082804376" class="d-flex align-items-center justify-content-center text-light position-absolute top-0 start-0 end-0 bottom-0" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+            </div>
+            <!-- <div class="sm-icon position-relative">
+                <a href="#" class="d-flex align-items-center justify-content-center text-light position-absolute top-0 start-0 end-0 bottom-0" target="_blank"><i class="bi bi-discord fs-3"></i></a>
+            </div> -->
+            <div class="sm-icon position-relative">
+                <a href="https://www.reddit.com/user/AdagioBrilliant967/" class="d-flex align-items-center justify-content-center text-light position-absolute top-0 start-0 end-0 bottom-0" target="_blank"><i class="bi bi-reddit fs-3"></i></a>
+            </div>            
+            <div class="sm-icon position-relative">
+                <a href="https://www.facebook.com/vishuchavan24" class="d-flex align-items-center justify-content-center text-light position-absolute top-0 start-0 end-0 bottom-0" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+            </div>
+            <div class="sm-icon position-relative">
+                <a href="https://www.instagram.com/its__chintamani__lover/" class="d-flex align-items-center justify-content-center text-light position-absolute top-0 start-0 end-0 bottom-0" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand cedarville-cursive-regular fs-3 fw-bold" href="#">Vishakha Chavan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="bi bi-list fs-1"></span>
+                </button>
+                <div class="offcanvas bg-body-tertiary offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <!-- <h5 class="offcanvas-title cedarville-cursive-regular" id="offcanvasNavbarLabel">Vishakha Chavan</h5> -->
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item pb-2 p-lg-2">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item pb-2 p-lg-2">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item pb-2 p-lg-2">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item pb-2 p-lg-2">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section id="about" class="py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 d-none d-lg-block">
+                            <img src="assets/img/about-left.png" class="img-fluid">
+                        </div>
+                        <div class="col-xxl-5 col-xl-5 col-lg-6">
+                            <h1 class="section-heading fs-1 fw-light mb-4">About Me</h1>
+                            <p class="lead lh-lg">Full Stack Web Developer with 3+ years of experience in PHP, MySQL, JavaScript, WordPress, and CodeIgniter. Skilled in building responsive, user-friendly web solutions with clean, efficient code. Currently enhancing Laravel expertise and known for adaptability, attention to detail, and a collaborative work ethic.</p>
+                            <p>
+                            <a href="#contact" class="btn bg-primary-subtle px-4 py-2 my-2 rounded-0 shadow">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="bg-body-secondary py-5 text-center">
+                <div class="container py-5 my-5">
+                    <div class="section-title text-center mb-5 pb-5">
+                        <h1>My Top Skills</h1>
+                    </div>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-10 col-10">
+                            <div class="row g-5 justify-content-center align-items-center">
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                    <div class="card card-body border-0 bg-transparent">
+                                        <img src="assets/img/skills/html-5.png" width="100" class="img-fluid d-block m-auto">
+                                    </div>
+                                </div>                        
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                    <div class="card card-body border-0 bg-transparent">
+                                        <img src="assets/img/skills/css.png" width="100" class="img-fluid d-block m-auto">
+                                    </div>
+                                </div>                        
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                    <div class="card card-body border-0 bg-transparent">
+                                        <img src="assets/img/skills/java-script.png" width="100" class="img-fluid d-block m-auto">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                    <div class="card card-body border-0 bg-transparent">
+                                        <img src="assets/img/skills/bootstrap_5968672.png" width="100" class="img-fluid d-block m-auto bg-light rounded rounded-4">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                    <div class="card card-body border-0 bg-transparent">
+                                        <img src="assets/img/skills/jquery.png" width="100" class="img-fluid d-block m-auto bg-light rounded-circle">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                    <div class="card card-body border-0 bg-transparent">
+                                        <img src="assets/img/skills/ajax-removebg-preview.png" width="100" class="img-fluid d-block m-auto bg-light rounded-circle">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                    <div class="card card-body border-0 bg-transparent">
+                                        <img src="assets/img/skills/1175201.png" width="200" class="img-fluid d-block m-auto">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                    <div class="card card-body border-0 bg-transparent">
+                                        <img src="assets/img/skills/php_919830.png" width="100" class="img-fluid d-block m-auto">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                    <div class="card card-body border-0 bg-transparent">
+                                        <img src="assets/img/skills/mysql-logo-300x300.png" width="200" class="img-fluid d-block m-auto">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                    <div class="card card-body border-0 bg-transparent">
+                                        <img src="assets/img/skills/wordpress_14063231.png" width="100" class="img-fluid d-block m-auto bg-light rounded-circle">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                    <div class="card card-body border-0 bg-transparent">
+                                        <img src="assets/img/skills/nodejs-removebg-preview.png" width="200" class="img-fluid d-block m-auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="py-5">
+                <div class="container py-5">
+                    <div class="section-title text-center mb-lg-5 pb-5">
+                        <h1>My Projects</h1>
+                    </div>
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/dhwaneer.png" class="img-fluid" alt="DHWANEER | FLOW : FILTER : ENJOY"/>
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Dhwaneer | Flow : Filter : Enjoy</h3>
+                                    <a href="https://dhwaneer.com/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/sailorsmarina.png" class="img-fluid" alt="SAILORSMARINA SOLUTIONS INDUS PVT LTD">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Sailorsmarina Solutions Indus Pvt Ltd</h3>
+                                    <a href="https://sailorsmarina.in/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/technochem.png" class="img-fluid" alt="TECHNO CHEM PVT LTD">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Techno Chem Pvt Ltd</h3>
+                                    <a href="https://technochemindia.co.in/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/smsipl.png" class="img-fluid" alt="SAILORSMARITIME SERVICES INDIA PVT. LTD">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Sailorsmaritime Services India Pvt Ltd</h3>
+                                    <a href="https://smsipl.co.in/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/udpharma.png" class="img-fluid" alt="UD PHARMA RUBBER PRODUCTS">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">UD Pharma Rubber Products</h3>
+                                    <a href="https://udpharmaproducts.com/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/toxpeer.png" class="img-fluid" alt="TOXPEER">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Toxpeer</h3>
+                                    <a href="https://toxpeer.com/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/jansevayojna.png" class="img-fluid" alt="JANSEVA YOJNA">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Janseva Yojna</h3>
+                                    <a href="https://jansevayojna.in/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/sharpas.png" class="img-fluid" alt="SHARP ACCOUNTING SOLUTIONS">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Sharp Accounting Solutions</h3>
+                                    <a href="https://sharpas.in/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/namoadvisors.png" class="img-fluid" alt="NAMO ADVISORS">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Namo Advisors</h3>
+                                    <a href="https://namoadvisors.com/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/yashinternationals.png" class="img-fluid" alt="YASH INTERNATIONALS">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Yash Internationals</h3>
+                                    <a href="https://yashinternationals.in/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/metrocity.png" class="img-fluid" alt="METROCITY PROPERTIES">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Metrocity Properties</h3>
+                                    <a href="https://metrocityproperties.in/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/trspl.png" class="img-fluid" alt="TRISHULA ROBOTICS SOLUTIONS PVT. LTD">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Trishula Robotics Solutions Pvt Ltd</h3>
+                                    <a href="https://trspl.in/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/jainanurag.png" class="img-fluid" alt="JAIN ANURAG & ASSOCIATES">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Jain Anurag Associates</h3>
+                                    <a href="https://jainanuragassociates.com/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/trishulainnovation.png" class="img-fluid" alt="TRISHULA INNOVATION">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Trishula Innovation</h3>
+                                    <a href="https://trishulainnovation.com/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/cees.png" class="img-fluid" alt="CONTINENTAL ENVIROTECH & ENGG. SOLUTIONS">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Continental Envirotech & Engg. Solutions</h3>
+                                    <a href="https://continentalenvirotech.com/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-container">
+                                <img src="assets/img/projects/accutest.png" class="img-fluid" alt="ACCUTEST RESEARCH LABORATORIES PVT. LTD">
+                                <div class="overlay p-4 p-lg-5">
+                                    <h3 class="title mb-3">Accutest Research Laboratories Pvt. Ltd</h3>
+                                    <a href="https://accutestglobal.com/" class="hover-link" target="_blank"><i class="bi bi-link-45deg fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="bg-body-secondary py-5">
+                <div class="container py-5 my-5">
+                    <div class="section-title text-center pb-5">
+                        <h1>Get in Touch</h1>
+                    </div>                    
+
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-8 col-10">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div id="response"></div>
+                                    <form id="myContactForm">
+                                        <div class="mb-3">
+                                            <label for="exampleInputName" class="form-label">Name</label>
+                                            <input type="text" name="fname" class="form-control shadow-sm" placeholder="Enter your name" id="exampleInputName" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail" class="form-label">Email address</label>
+                                            <input type="email" name="email" class="form-control shadow-sm" placeholder="Enter your email" id="exampleInputEmail" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputMessage" class="form-label">Message</label>
+                                            <textarea name="message" class="form-control shadow-sm" placeholder="Enter your message" rows="4" id="exampleInputMessage" required></textarea>
+                                        </div>
+                                        <button type="submit" name="submit" class="btn bg-success-subtle text-success-emphasis fw-semibold px-4 py-2 my-2 rounded-0 shadow">Submit</button>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="mb-0">Made with <i class="bi bi-suit-heart-fill text-danger"></i> by <span class="cedarville-cursive-regular fw-semibold">Vishakha Chavan</span></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <div class="dropdown position-fixed z-1 bottom-0 end-0 mb-3 me-3 color-mode-toggle">
+            <button class="btn btn-secondary py-2 dropdown-toggle d-flex align-items-center shadow" id="color-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                <span class="my-1 theme-icon-active" width="1em" height="1em"><i class="bi bi-circle-half"></i></span>
+                <span class="visually-hidden" id="color-theme-text">Toggle theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end py-0 shadow" aria-labelledby="color-theme-text">
+                <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                        <span class="me-2 opacity-50" width="1em" height="1em"><i class="bi bi-sun-fill"></i></span>
+                        Light
+                        <span id="check2" class="ms-auto d-none" width="1em" height="1em"><i class="bi bi-check2"></i></span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                        <span class="me-2 opacity-50" width="1em" height="1em"><i class="bi bi-moon-stars-fill"></i></span>
+                        Dark
+                        <span class="ms-auto d-none" width="1em" height="1em"><i class="bi bi-check2"></i></span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                    <span class="me-2 opacity-50" width="1em" height="1em"><i class="bi bi-circle-half"></i></span>
+                    Auto
+                    <span class="ms-auto d-none" width="1em" height="1em"><i class="bi bi-check2"></i></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Scroll to top -->
+        <a href="#" id="scroll-top" class="btn btn-primary position-fixed z-1 bottom-0 start-0 rounded-circle shadow fs-5 ms-3 mb-3">
+            <i class="bi bi-chevron-double-up"></i>
+        </a>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="assets/js/color-modes.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
